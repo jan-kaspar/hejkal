@@ -4571,13 +4571,19 @@ namespace Hejkal
 			public const int path_password_strike_through = 2131558445;
 			
 			// aapt resource value: 0x7F0D002E
-			public const int search_menu_title = 2131558446;
+			public const int search_button_text = 2131558446;
 			
 			// aapt resource value: 0x7F0D002F
-			public const int status_bar_notification_info_overflow = 2131558447;
+			public const int search_hint = 2131558447;
 			
 			// aapt resource value: 0x7F0D0030
-			public const int version = 2131558448;
+			public const int search_menu_title = 2131558448;
+			
+			// aapt resource value: 0x7F0D0031
+			public const int status_bar_notification_info_overflow = 2131558449;
+			
+			// aapt resource value: 0x7F0D0032
+			public const int version = 2131558450;
 			
 			static String()
 			{
