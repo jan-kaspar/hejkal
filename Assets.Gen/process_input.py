@@ -22,15 +22,24 @@ def CopyContents(source: str, dest):
 
     dest.writelines(lines)
 
-def InitSongFile(fileName: str, number: str, name: str, auth: str):
+def InitSongFile(fileName: str, song: dict):
     f = open(fileName, "w", encoding="utf-8")
 
     CopyContents("songFileHeader.html", f)
 
-    f.write("<h1>" + number + ": " + name + "</h1>\n")
+    f.write("<h1>" + song["number"] + ": " + song["name"] + "</h1>\n")
 
-    if auth:
-        f.write("<h2>" + auth + "</h2>\n")
+    additions = []
+
+    if song["author"]:
+        additions.append(song["author"]);
+
+    if song["source"]:
+        additions.append("<i>" + song["source"] + "</i>")
+
+    addLine = ", ".join(additions)
+    if addLine:
+        f.write("<h3>" + addLine + "</h3>\n")
 
     return f
 
@@ -72,14 +81,18 @@ def ProcessOneFile(fileName: str):
             author = arguments[2] if len(arguments) > 2 else ""
             source = arguments[3] if len(arguments) > 3 else ""
 
-            # add to collection            fn_out = number + ".html"
-            songCollection.append({"number": number, "name": name, "author": author, "source": source, "file": fn_out})
+            # aggreate all information
+            fn_out = number + ".html"
+            song = {"number": number, "name": name, "author": author, "source": source, "file": fn_out}
+
+            # add to collection
+            songCollection.append(song)
 
             # close old file (if any)
             FinaliseSongFile(f_out)
 
             # open new file
-            f_out = InitSongFile(os.path.join(outputDir, songsDir, fn_out), number, name, author)
+            f_out = InitSongFile(os.path.join(outputDir, songsDir, fn_out), song)
 
             continue
 
