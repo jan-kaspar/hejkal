@@ -27,7 +27,7 @@
 		android:layout_below="@id/SelectionText"
 		android:id="@+id/SearchButton" />
 	<TextView
-		android:text="@string/version"
+		android:text="version"
 		android:textAppearance="?android:attr/textAppearanceSmall"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"

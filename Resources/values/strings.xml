@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Hejkal</string>
-    <string name="version">0.1+</string>
     <string name="search_hint">Hledaný výraz (číslo nebo název):</string>
     <string name="search_button_text">Hledej</string>
 </resources>
