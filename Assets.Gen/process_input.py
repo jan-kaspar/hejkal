@@ -6,7 +6,12 @@ import shutil
 inputDir = "."
 songsDir = "Assets\Songs"
 outputDir = ".."
-    
+
+# prepare output
+songsOutputDir = os.path.join(outputDir, songsDir)
+if not os.path.isdir(songsOutputDir):
+    os.makedirs(songsOutputDir)
+
 # process all input files
 songCollection = []
 
@@ -32,7 +37,7 @@ def InitSongFile(fileName: str, number: str, name: str, auth: str):
 def FinaliseSongFile(file):
     if file == None:
         return
-    
+
     CopyContents("songFileFooter.html", file)
 
     file.close()
@@ -44,6 +49,7 @@ def ProcessOneFile(fileName: str):
     f_out = None
 
     newSongPattern = re.compile("\\\\newsong{(.*)}")
+    newVersePattern = re.compile("^(\d+)\.\s*(.*)$")
 
     # process each line
     for line in lines:
@@ -63,28 +69,39 @@ def ProcessOneFile(fileName: str):
             arguments = sr.group(1).split("|")
             number = arguments[0]
             name = arguments[1]
-            auth = ""
-            if len(arguments) > 2:
-                auth = arguments[2]
+            author = arguments[2] if len(arguments) > 2 else ""
+            source = arguments[3] if len(arguments) > 3 else ""
 
-            fn_out = number + ".html"
-
-            #print("    {}, {}, {}, {}".format(number, name, auth, fn_out))
-
-            # add to collection            
-            songCollection.append((number, name, auth, fn_out))
+            # add to collection            fn_out = number + ".html"
+            songCollection.append({"number": number, "name": name, "author": author, "source": source, "file": fn_out})
 
             # close old file (if any)
             FinaliseSongFile(f_out)
 
             # open new file
-            f_out = InitSongFile(os.path.join(outputDir, songsDir, fn_out), number, name, auth)
+            f_out = InitSongFile(os.path.join(outputDir, songsDir, fn_out), number, name, author)
 
             continue
 
-        # regular line
+        # shall add an empty line
+        addLine = False
+        if ("{REF}" in line) or ("{ODP}" in line):
+            addLine = True
+
+        newVerseFound = re.search(newVersePattern, line)
+        if newVerseFound:
+            addLine = True
+
+        if addLine:
+            f_out.write("<br>\n")
+        # replacements
+        if newVerseFound:
+            line = "<b>{}.</b> {}".format(newVerseFound.group(1), newVerseFound.group(2))
+
+        line = line.replace("{REF}", "<b>REF: </b>").replace("{ODP}", "<b>ODP: </b>")
+
+        # write to output
         if f_out != None:
-            line = line.replace("{REF}", "<i>REF: </i>").replace("{ODP}", "<i>ODP: </i>")
             f_out.write(line + "<br>\n")
 
     FinaliseSongFile(f_out)
@@ -101,14 +118,6 @@ f_out = open(os.path.join(outputDir, "Search.gen.cs"), "w", encoding="utf-8")
 CopyContents("searchFileHeader.cs", f_out)
 
 for song in songCollection:
-    number = song[0]
-    name = song[1]
-    auth = song[2]
-    fn = song[3]
-    #f_out.write("    if (strpos(\"{}\", $key) !== false || strpos(\"{}\", $key) !== false) echo \"<li><a href=\\\"{}\\\">{}: {}</a></li>\"\n".format(number, name, "songs/" + fn, number, name))
-    f_out.write("\t\t\tallSongs.Add(new SongData(\"{}\", \"{}\"));\n".format(number, name))
+    f_out.write("\t\t\tallSongs.Add(new SongData(\"{}\", \"{}\"));\n".format(song["number"], song["name"]))
 
 CopyContents("searchFileFooter.cs", f_out)
-
-# write asset block
-#<ItemGroup><AndroidAsset Include="Assets\Songs\1.html" /></ItemGroup>
