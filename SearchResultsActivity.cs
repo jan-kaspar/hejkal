@@ -22,15 +22,17 @@ namespace Hejkal
 			var searchResults = Intent.Extras.GetStringArrayList("searchResults");
 			ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, searchResults);
 
-			ListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs args) =>
-			{
-				var item = ((TextView)args.View).Text;
-				var songNumber = item.Split(':')[0];
+			ListView.ItemClick += ItemClick;
+		}
 
-				var intent = new Intent(this, typeof(SongViewActivity));
-				intent.PutExtra("songFile", songNumber + ".html");
-				StartActivity(intent);
-			};
+		void ItemClick(object sender, AdapterView.ItemClickEventArgs args)
+		{
+			var item = ((TextView)args.View).Text;
+			var songNumber = item.Split(':')[0];
+
+			var intent = new Intent(this, typeof(SongViewActivity));
+			intent.PutExtra("songFile", songNumber + ".html");
+			StartActivity(intent);
 		}
 	}
 }
