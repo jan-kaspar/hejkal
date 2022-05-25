@@ -27,7 +27,10 @@ namespace Hejkal
 
 			searchButton.Click += (sender, e) =>
 			{
-				var pattern = selectionText.Text;
+				var pattern = new string(selectionText.Text);
+
+				// reset text before next search
+				selectionText.Text = "";
 
 				if (pattern == "")
 				{
@@ -35,12 +38,16 @@ namespace Hejkal
 					return;
 				}
 
-				var intent = new Intent(this, typeof(SearchResultsActivity));
-				intent.PutStringArrayListExtra("searchResults", search.FindSongs(selectionText.Text));
-				StartActivity(intent);
+				var results = search.FindSongs(pattern);
+				if (results.Length == 0)
+				{
+					Toast.MakeText(Application, "Nic nebylo nalezeno.", ToastLength.Long).Show();
+					return;
+				}
 
-				// reset text before next search
-				selectionText.Text = "";
+				var intent = new Intent(this, typeof(SearchResultsActivity));
+				intent.PutStringArrayListExtra("searchResults", results);
+				StartActivity(intent);
 			};
         }
 
