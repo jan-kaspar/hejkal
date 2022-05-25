@@ -38,6 +38,9 @@ namespace Hejkal
 				var intent = new Intent(this, typeof(SearchResultsActivity));
 				intent.PutStringArrayListExtra("searchResults", search.FindSongs(selectionText.Text));
 				StartActivity(intent);
+
+				// reset text before next search
+				selectionText.Text = "";
 			};
         }
 
