@@ -59,6 +59,7 @@ def ProcessOneFile(fileName: str):
 
     newSongPattern = re.compile("\\\\newsong{(.*)}")
     newVersePattern = re.compile("^(\d+)\.\s*(.*)$")
+    translationPattern = re.compile("\\\\translation{(.*)}")
 
     # process each line
     for line in lines:
@@ -107,11 +108,14 @@ def ProcessOneFile(fileName: str):
 
         if addLine:
             f_out.write("<br>\n")
+
         # replacements
         if newVerseFound:
             line = "<b>{}.</b> {}".format(newVerseFound.group(1), newVerseFound.group(2))
 
         line = line.replace("{REF}", "<b>REF: </b>").replace("{ODP}", "<b>ODP: </b>")
+
+        line = re.sub(translationPattern, lambda m : "<i>Překlad: " + m.group(1) + "</i>", line)
 
         # write to output
         if f_out != None:
