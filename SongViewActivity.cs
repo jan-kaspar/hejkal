@@ -24,6 +24,7 @@ namespace Hejkal
 			string songFile = Intent.Extras.GetString("songFile");
 			WebView textView = FindViewById<WebView>(Resource.Id.webView);
 			textView.LoadUrl("file:///android_asset/Songs/" + songFile);
+			textView.Settings.BuiltInZoomControls = true;
 		}
 	}
 }
