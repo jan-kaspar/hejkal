@@ -54,7 +54,9 @@ namespace Hejkal
 			var results = search.FindSongs(pattern);
 			if (results.Length == 0)
 			{
-				Toast.MakeText(Application, "Nic nebylo nalezeno.", ToastLength.Long).Show();
+				var toast = Toast.MakeText(Application, "Nic nebylo nalezeno.", ToastLength.Long);
+				toast.SetGravity(Android.Views.GravityFlags.Top, 0, 0);
+				toast.Show();
 				return;
 			}
 
