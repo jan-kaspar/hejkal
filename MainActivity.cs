@@ -52,6 +52,8 @@ namespace Hejkal
 		private void DoSearch(string pattern)
 		{
 			var results = search.FindSongs(pattern);
+			
+			// nothing found -> show error
 			if (results.Length == 0)
 			{
 				var toast = Toast.MakeText(Application, "Nic nebylo nalezeno.", ToastLength.Long);
@@ -60,6 +62,18 @@ namespace Hejkal
 				return;
 			}
 
+			// exactly one result -> display the song
+			if (results.Length == 1)
+			{
+				var songNumber = SongData.PackedStringToFileName(results[0]);
+
+				var intentd = new Intent(this, typeof(SongViewActivity));
+				intentd.PutExtra("songFile", songNumber + ".html");
+				StartActivity(intentd);
+				return;
+			}
+
+			// multiple results -> show the list
 			var intent = new Intent(this, typeof(SearchResultsActivity));
 			intent.PutStringArrayListExtra("searchResults", results);
 			StartActivity(intent);

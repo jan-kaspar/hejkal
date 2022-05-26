@@ -13,11 +13,6 @@ namespace Hejkal
 			title = _t;
 		}
 
-		public override string ToString()
-		{
-			return number + ": " + title;
-		}
-
 		public bool Match(string key)
 		{
 			if (number == key)
@@ -27,6 +22,16 @@ namespace Hejkal
 				return true;
 
 			return false;
+		}
+
+		public string PackToString()
+		{
+			return number + ": " + title;
+		}
+
+		public static string PackedStringToFileName(string packedString)
+		{
+			return packedString.Split(':')[0];
 		}
 	}
 
@@ -41,7 +46,7 @@ namespace Hejkal
 			foreach (var song in allSongs)
 			{
 				if (song.Match(pattern))
-					results.Add(song.ToString());
+					results.Add(song.PackToString());
 			}
 
 			return results.ToArray();
