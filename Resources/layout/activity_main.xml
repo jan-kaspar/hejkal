@@ -26,11 +26,17 @@
 		android:layout_height="wrap_content"
 		android:layout_below="@id/SelectionText"
 		android:id="@+id/SearchButton" />
+    <Button
+        android:text="@string/show_all_button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SearchButton"
+        android:id="@+id/ShowAllButton" />
 	<TextView
 		android:text="version"
 		android:textAppearance="?android:attr/textAppearanceSmall"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_below="@id/SearchButton"
+		android:layout_below="@id/ShowAllButton"
 		android:id="@+id/VersionTextView" />
 </RelativeLayout>

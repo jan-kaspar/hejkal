@@ -13,6 +13,7 @@ namespace Hejkal
 	{
 		EditText selectionText;
 		Button searchButton;
+		Button showAllButton;
 		TextView versionTextView;
 		
 		Search search = new Search();
@@ -26,26 +27,30 @@ namespace Hejkal
 
 			selectionText = FindViewById<EditText>(Resource.Id.SelectionText);
 			searchButton = FindViewById<Button>(Resource.Id.SearchButton);
+			showAllButton = FindViewById<Button>(Resource.Id.ShowAllButton);
 			versionTextView = FindViewById<TextView>(Resource.Id.VersionTextView);
 
 			searchButton.Click += SearchButton_Click;
+			showAllButton.Click += ShowAllButton_Click;
 
 			versionTextView.Text = "verze " + VersionTracking.CurrentVersion;
 		}
-		
+
 		private void SearchButton_Click(object sender, object e)
 		{
-			var pattern = new string(selectionText.Text);
+			DoSearch(selectionText.Text);
 
 			// reset text before next search
 			selectionText.Text = "";
+		}
 
-			if (pattern == "")
-			{
-				Toast.MakeText(Application, "Hledaný výraz nesmí být prázdný.", ToastLength.Long).Show();
-				return;
-			}
-
+		private void ShowAllButton_Click(object sender, object e)
+		{
+			DoSearch("");
+		}
+		
+		private void DoSearch(string pattern)
+		{
 			var results = search.FindSongs(pattern);
 			if (results.Length == 0)
 			{
