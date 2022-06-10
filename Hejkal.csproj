@@ -97,7 +97,7 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\Songs\*.html" />
+    <AndroidAsset Include="Assets\Songs\*.*" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />

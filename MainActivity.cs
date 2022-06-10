@@ -68,7 +68,7 @@ namespace Hejkal
 				var songNumber = SongData.PackedStringToFileName(results[0]);
 
 				var intentd = new Intent(this, typeof(SongViewActivity));
-				intentd.PutExtra("songFile", songNumber + ".html");
+				intentd.PutExtra("songFile", Search.SongNumberToFileName(songNumber));
 				StartActivity(intentd);
 				return;
 			}

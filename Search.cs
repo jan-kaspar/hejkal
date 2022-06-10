@@ -49,7 +49,20 @@ namespace Hejkal
 					results.Add(song.PackToString());
 			}
 
+			// TODO: remove when testing over
+			if (pattern == "test")
+				results.Add("test: test");
+
 			return results.ToArray();
+		}
+
+		public static string SongNumberToFileName(string songNumber)
+		{
+			// TODO: remove when testing over
+			if (songNumber == "test")
+				return "test.png";
+
+			return songNumber + ".html";
 		}
 	}
 }
