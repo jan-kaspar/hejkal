@@ -4,8 +4,8 @@ import shutil
 
 # configuration
 inputDir = "."
-songsDir = "Assets\Songs"
-outputDir = ".."
+songsDir = "Resources\Raw\Songs"
+outputDir = "..\Hejkal"
 
 # prepare output
 songsOutputDir = os.path.join(outputDir, songsDir)
@@ -27,7 +27,7 @@ def InitSongFile(fileName: str, song: dict):
 
     CopyContents("songFileHeader.html", f)
 
-    f.write("<h1>" + song["number"] + ": " + song["name"] + "</h1>\n")
+    f.write("<h1>" + song["name"] + "</h1>\n")
 
     additions = []
 

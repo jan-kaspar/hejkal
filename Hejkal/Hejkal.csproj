@@ -49,6 +49,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="Assets.Gen\**" />
+	  <Compile Remove="Assets.Gen\**" />
+	  <EmbeddedResource Remove="Assets.Gen\**" />
+	  <MauiCss Remove="Assets.Gen\**" />
+	  <MauiXaml Remove="Assets.Gen\**" />
+	  <None Remove="Assets.Gen\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Compile Remove="AppShell.xaml.cs" />
 	</ItemGroup>
 
