@@ -37,11 +37,5 @@
 		{
 			return number + ": " + title;
 		}
-
-		// TODO: remove
-		public static string PackedStringToFileName(string packedString)
-		{
-			return packedString.Split(':')[0];
-		}
 	}
 }
