@@ -17,7 +17,7 @@ public partial class MainPage : ContentPage
 	private async void SearchBar_SearchButtonPressed(object sender, EventArgs e)
 	{
 		// run search
-		var results = search.FindSongs(SearchBar.Text);
+		var results = search.FindSongs(SearchBar.Text.Trim());
 
 		// show placeholder/tip again
 		SearchBar.Text = "";

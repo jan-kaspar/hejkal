@@ -30,6 +30,7 @@
 
 		private static bool IsMatch(string whereToSearch, string whatToSearch)
 		{
+			// TODO: ignore diacritics
 			return whereToSearch.IndexOf(whatToSearch, StringComparison.OrdinalIgnoreCase) >= 0;
 		}
 
