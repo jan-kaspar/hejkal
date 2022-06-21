@@ -17,7 +17,7 @@
 
 		public string GetNumber() => number;
 		public string GetTitle() => title;
-		public string GetAutor() => author;
+		public string GetAuthor() => author;
 		public string GetSource() => source;
 
 		public string GetFileName()
@@ -34,6 +34,7 @@
 			return whereToSearch.IndexOf(whatToSearch, StringComparison.OrdinalIgnoreCase) >= 0;
 		}
 
+		// TODO: move to search ??
 		public bool Match(string key)
 		{
 			if (number == key)

@@ -2,7 +2,7 @@
 
 namespace Hejkal
 {
-	partial class Search
+	public partial class Search
 	{
 		private List<SongData> allSongs;
 
