@@ -18,7 +18,7 @@ namespace Hejkal
 
 			// TODO: remove when testing over
 			if (pattern == "test")
-				results.Add(new SongData("test", "test"));
+				results.Add(new SongData("test", "test", "", ""));
 
 			return results;
 		}

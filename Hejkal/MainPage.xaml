@@ -6,7 +6,7 @@
 	<ScrollView>
 		<VerticalStackLayout Padding="0,20" Spacing="25" >
 
-		<SearchBar x:Name="SearchBar" Placeholder="Zadej číslo písně nebo část názvu..." PlaceholderColor="Gray"
+		<SearchBar x:Name="SearchBar" Placeholder="Zadej číslo písně, část názvu nebo autora..." PlaceholderColor="Gray"
 			IsTextPredictionEnabled="False"
 			HorizontalOptions="FillAndExpand"
 			SearchButtonPressed="SearchBar_SearchButtonPressed" />
