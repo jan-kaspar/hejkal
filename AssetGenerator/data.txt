@@ -2053,38 +2053,38 @@ smilování nám vypros u Syna (prosíme).
 Příčino naší radosti (Matko, Maria)
 i naším ANO ať vše začíná.
 
-\newsong{460|Laudate omnes gentes||Ž 117/1}
+\newsong{460|Laudate omnes gentes|Taizé|Ž 117/1}
 /: Laudate omnes gentes, laudate Dominum.:/
 \translation{Chvalte Hospodina všechny národy}
 
-\newsong{461|Laudate Dominum||Ž 117/1}
+\newsong{461|Laudate Dominum|Taizé|Ž 117/1}
 /: Laudate Dominum, laudate Dominum, omnes gentes, aleluja.:/
 \translation{Chvalte Hospodina všechny národy}
 
-\newsong{462|Pánu chválu vzdej / Blesss the Lord}
+\newsong{462|Pánu chválu vzdej / Blesss the Lord|Taizé}
 ČJ: Pánu chválu vzdej a jméno Jeho chval. 
 Pánu chválu vzdej, jen On ti život dá. 
 AJ: Blesss the Lord, my soul, and bless his holy name.
 Blesss the Lord, my soul, who leads me into life.
 
-\newsong{463|Sanctum nomen Domini}
+\newsong{463|Sanctum nomen Domini|Taizé}
 /: Sanctum nomen Domini magnificat anima mea.:/
 \translation{Má duše velebí Hospodinovo svaté jméno}
 
-\newsong{464|Jubilate Deo}
+\newsong{464|Jubilate Deo|Taizé}
 Jubilate Deo omnis terra! O, Aleluia, aleluia.
 \translation{Jásej Hospodinu, celá země}
 
-\newsong{465|Pane, chválíme Tě / Bénissez le Seigneur||Ž 148}
+\newsong{465|Pane, chválíme Tě / Bénissez le Seigneur|Taizé|Ž 148}
 ČJ: Pane, chválíme Tě
 FR: Bénissez le Seigneur!
 
-\newsong{466|Confitemini Domino||Ž 136,1}
+\newsong{466|Confitemini Domino|Taizé|Ž 136,1}
 Confitemini Domino, quoniam bonus.
 Confitemini Domino, aleluia.
 \translation{Oslavujte Hospodina, neboť je dobrý.}
 
-\newsong{467|Misericirdias Domini||Ž 89,2}
+\newsong{467|Misericirdias Domini|Taizé|Ž 89,2}
 Misericirdias Domini in aeternum cantabo.
 \translation{Navěky chci zpívat o Pánově milosrdenství.}
 
@@ -2093,147 +2093,147 @@ Jesu Redemptor omnium, tu lumen et splendor Patris,
 tibi sit gloria, tibi Jesu sit gloria.
 \translation{Ježíši, spasiteli všeho, co žije, Otcovo světlo, tobě patří sláva.}
 
-\newsong{469|O, adoramus te, Domine}
+\newsong{469|O, adoramus te, Domine|Taizé}
 O, adoramus te, Domine
 \translation{Klaníme se Ti, Kriste}
 
-\newsong{470|O, Christe, Domine Jesu}
+\newsong{470|O, Christe, Domine Jesu|Taizé}
 O, Christe, Domine Jesu
 \translation{O, Kriste, Pane Ježíši}
 
-\newsong{471|Zůstaňte zde||Mt 26, 38}
+\newsong{471|Zůstaňte zde|Taizé|Mt 26, 38}
 Zůstaňte zde a bděte se mnou. Bděte a modlete se, bděte a proste.
 
-\newsong{472|Venite, exultemus Domino}
+\newsong{472|Venite, exultemus Domino|Taizé}
 /: Venite, exultemus Domino, venite, adoremus. :/
 \translation{Pojďme, jásejme Hospodinu, pojďme, klaňme se.}
 
-\newsong{473|Oculi nostri}
+\newsong{473|Oculi nostri|Taizé}
 Oculi nostri ad Dominum Jesum, Oculi nostri ad Dominum nostrum.
 \translation{Naše oči hledí na Pána Ježíše, našeho Boha.}
 
-\newsong{474|V temnotách našich dnů}
+\newsong{474|V temnotách našich dnů|Taizé}
 /: V temnotách našich dnů zapal oheň,
 který nezhasíná, nikdy nezhasíná v nás.:/
 
-\newsong{475|Kdo hledí k Bohu||Ž 34, 6}
+\newsong{475|Kdo hledí k Bohu|Taizé|Ž 34, 6}
 Kdo hledí k Bohu, tvář svou rozjasní,
 /: láska v něm září, nic nepostrádá.:/
 
-\newsong{476|Blízko je Pán}
+\newsong{476|Blízko je Pán|Taizé}
 Blízko je Pán a Jeho den. Blízko je Pán, v Něm síla má.
 
-\newsong{477|Ježíši, přijď|Podle sv. Augustina}
+\newsong{477|Ježíši, přijď|Taizé|Podle sv. Augustina}
 Ježíši, přijď, tys světlo mé duše, má noc jak den před Tebou se rozjasní.
 Ježíši, přijď, tys světlo mé duše, láska Tvá život můj promění.
 
-\newsong{478|Bonum est confidere}
+\newsong{478|Bonum est confidere|Taizé}
 Bonum est confidere in Domino, bonum sperare in Domino.
 \translation{Je dobré doufat v Hospodina.}
 
-\newsong{479|In te confido}
+\newsong{479|In te confido|Taizé}
 O, Jesu Christe, o, in te confido.
 \translation{Ježíši Kriste, v Tebe doufám.} 
 
-\newsong{480|Radostí srdce je Pán}
+\newsong{480|Radostí srdce je Pán|Taizé}
 Radostí srdce je Pán, na Pána čeká duše má.
 
-\newsong{481|Každý den}
+\newsong{481|Každý den|Taizé}
 Každý den Pán mi sílu dává, písní mou je můj Pán.
 On se stal mým spasením, /: když kráčím s Ním, nemusím se bát.:/
 
-\newsong{482|Náš Bůh je láska}
+\newsong{482|Náš Bůh je láska|Taizé}
 Náš Bůh je láska, mějte odvahu, žijte pro lásku.
 Náš Bůh je láska. Nemusíš se bát.
 
-\newsong{483|El alma que anda en amor}
+\newsong{483|El alma que anda en amor|Taizé}
 /: El alma que anda en amor, ni cansa ni se cansa.:/
 
-\newsong{484|Jdem tmou a nocí / De noche}
+\newsong{484|Jdem tmou a nocí / De noche|Taizé}
 Jdem tmou a nocí, tak temnou, za pramenem vody živé.
 /: Jen žízeň nám bude světlem. :/
 De noche i remos, de noche, que paraen contrar la fuente.
 /: Sólo la sed nos alumbra.:/
 
-\newsong{485|Nada te turbe}
+\newsong{485|Nada te turbe|Taizé}
 Nada te turbe, nada te espante; quien a Dios tiene nada le falta.
 Nada te turbe, nada te espante; sólo Dios basta.
 \translation{Nic ať tě nemate, nic ať tě neděsí. Bůh sám to stačí. - sv. Terezie z Avily}
 
-\newsong{486|Před Tebou}
+\newsong{486|Před Tebou|Taizé}
 Před Tebou, Pane, temno ztrácí sílu svou, noc odchází a den jasně září.
 
-\newsong{487|Jen Bůh||Ž 62}
+\newsong{487|Jen Bůh|Taizé|Ž 62}
 Jen Bůh mé duši dává spásu a mír, jen s Ním přichází mír.
 Dá spočinout mé duši v Božím smíru, spása má je v Něm.
 
-\newsong{488|Duše má po Tobě touží}
+\newsong{488|Duše má po Tobě touží|Taizé}
 Duše má po Tobě touží; v Tobě navždy spočinout, Kriste.
 Ó, Ty slyšíš, když volám. Ó.
 
-\newsong{489|Ubi caritas}
+\newsong{489|Ubi caritas|Taizé}
 Ubi caritaset amor, ubi caritas, Deus ibi est.
 \translation{Kde je dobrota a láska, tam přebývá Bůh.}
 
-\newsong{490|Nunc dimittis||Lk 2, 29}
+\newsong{490|Nunc dimittis|Taizé|Lk 2, 29}
 Nunc dimittis servum tuum, Domine, secundum verbum tuum in pace.
 \translation{Nyní můžeš, Pane, propustit svého služebníka v pokoji, podle svého slova.}
 
-\newsong{491|Dona pacem cordium}
+\newsong{491|Dona pacem cordium|Taizé}
 Dona pacem cordium.
 \translation{Daruj nám pokoj srdce.}
 
-\newsong{492|Veni Sancte Spiritus}
+\newsong{492|Veni Sancte Spiritus|Taizé}
 Veni Sancte Spiritus.
 \translation{Přijď, Duchu svatý.}
 
-\newsong{493|Spiritus Jesu Christi}
+\newsong{493|Spiritus Jesu Christi|Taizé}
 Spiritus Jesu Christi, Spiritus caritatis, /: confirmet cor tuum. :/
 \translation{Duch Ježíše Krista, Duch lásky, ať posílí Tvé srdce.}
 
-\newsong{494|Veni Lumen}
+\newsong{494|Veni Lumen|Taizé}
 O, veni Creator Spiritus. O, /: veni lumen cordium.:/
 \translation{Přijď, Duchu Stvořiteli, přijď, světlo srdcí.}
 
-\newsong{495|Veni Creator (kánon)}
+\newsong{495|Veni Creator (kánon)|Taizé}
 Veni Creator, veni Creator, veni Creator Spiritus.
 \translation{Přijď, Duchu Stvořiteli.}
 
-\newsong{496|Tui amoris ignem}
+\newsong{496|Tui amoris ignem|Taizé}
 Veni Sancte Spiritus, tui amoris ignem accende. /: Veni Sancte Spiritus.:/
 \translation{Přijď, Duchu Svatý, zapal oheň své lásky.}
 
-\newsong{497|In resurrectione tua}
+\newsong{497|In resurrectione tua|Taizé}
 /: In resurrectione tua, Christe, coeli et terra laetentur.:/
 \translation{Z Tvého zmrtvýchvstání, Kriste, ať se radují nebesa i zem.}
 
-\newsong{498|Nebojte se}
+\newsong{498|Nebojte se|Taizé}
 /: Nebojte se, radujte se! Kristus, slavný vítěz z hrobu vstal.:/
 
-\newsong{499|Crucem tuam}
+\newsong{499|Crucem tuam|Taizé}
 Crucem tuam adoramus Domine, resurrectionem tuam,
 laudamus Domine. Laudamus et glorificamus.
 Resurectionem tuam, laudamus Domine.
 \translation{Tvému kříži se klaníme, Pane, tvé zmrtvýchvstání chválíme.}
 
-\newsong{500|In manus tuas, Pater||Lk 23, 46}
+\newsong{500|In manus tuas, Pater|Taizé|Lk 23, 46}
 /: In manus tuas, Pater, commendo spiritum meum. :/
 \translation{Otče, do Tvých rukou odevzdávám svého ducha.}
 
-\newsong{501|Adoramus te Christe}
+\newsong{501|Adoramus te Christe|Taizé}
 Adoramus te Christe benedicimus tibi,
 /: quia per crucem tuam redemisti mundum.:/
 \translation{Klaníme se ti, Kriste, a dobrořečíme ti, neboť svým křížem jsi vykoupil svět.}
 
-\newsong{502|Salvator mundi}
+\newsong{502|Salvator mundi|Taizé}
 /: Salvator mundi, salva nos :/ /: salva nos :/, salvator mundi, salva nos.
 \translation{Spasiteli světa, zachaň nás.}
 
-\newsong{503|Kyrie eleison}
+\newsong{503|Kyrie eleison|Taizé}
 Kyrie eleison
 \translation{Pane, smiluj se.}
 
-\newsong{504|Kyrie eleison}
+\newsong{504|Kyrie eleison|Taizé}
 Kyrie eleison.
 \translation{Pane, smiluj se.}
 
